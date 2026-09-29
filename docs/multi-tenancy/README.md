@@ -2,8 +2,8 @@
 
 This topic provides commands to set up different configurations of hosts, nodes, and drives. The examples provided here can be used as a starting point for other configurations.
 
-1. [Standalone Deployment](#standalone-deployment)
-2. [Distributed Deployment](#distributed-deployment)
+1. [Standalone Deployment](#1-standalone-deployment)
+2. [Distributed Deployment](#2-distributed-deployment)
 3. [Cloud Scale Deployment](#cloud-scale-deployment)
 
 ## 1. Standalone Deployment

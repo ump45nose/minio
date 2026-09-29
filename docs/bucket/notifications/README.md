@@ -36,10 +36,10 @@ Bucket events can be published to the following targets:
 
 | Supported Notification Targets    |                             |                                 |
 | :-------------------------------- | --------------------------- | ------------------------------- |
-| [`AMQP`](#AMQP)                   | [`Redis`](#Redis)           | [`MySQL`](#MySQL)               |
-| [`MQTT`](#MQTT)                   | [`NATS`](#NATS)             | [`Apache Kafka`](#apache-kafka) |
-| [`Elasticsearch`](#Elasticsearch) | [`PostgreSQL`](#PostgreSQL) | [`Webhooks`](#webhooks)         |
-| [`NSQ`](#NSQ)                     |                             |                                 |
+| [`AMQP`](#publish-minio-events-via-amqp)                   | [`Redis`](#publish-minio-events-via-redis)           | [`MySQL`](#publish-minio-events-via-mysql)               |
+| [`MQTT`](#publish-minio-events-mqtt)                   | [`NATS`](#publish-minio-events-via-nats)             | [`Apache Kafka`](#publish-minio-events-via-kafka) |
+| [`Elasticsearch`](#publish-minio-events-via-elasticsearch) | [`PostgreSQL`](#publish-minio-events-via-postgresql) | [`Webhooks`](#publish-minio-events-via-webhooks)         |
+| [`NSQ`](#publish-minio-events-to-nsq)                     |                             |                                 |
 
 ## Prerequisites
 
@@ -400,7 +400,7 @@ mc admin config set myminio notify_elasticsearch:1 queue_limit="0"  url="http://
 
 Note that, you can add as many Elasticsearch server endpoint configurations as needed by providing an identifier (like "1" in the example above) for the Elasticsearch instance and an object of per-server configuration parameters.
 
-### Step 3: Enable Elastichsearch bucket notification using MinIO client
+### Step 3: Enable Elasticsearch bucket notification using MinIO client
 
 We will now enable bucket event notifications on a bucket named `images`. Whenever a JPEG image is created/overwritten, a new document is added or an existing document is updated in the Elasticsearch index configured above. When an existing object is deleted, the corresponding document is deleted from the index. Thus, the rows in the Elasticsearch index, reflect the `.jpg` objects in the `images` bucket.
 

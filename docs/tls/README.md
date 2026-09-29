@@ -2,9 +2,9 @@
 
 This guide explains how to configure MinIO Server with TLS certificates on Linux and Windows platforms.
 
-1. [Install MinIO Server](#install-minio-server)
-2. [Use an Existing Key and Certificate with MinIO](#use-an-existing-key-and-certificate-with-minio)
-3. [Generate and use Self-signed Keys and Certificates with MinIO](#generate-use-self-signed-keys-certificates)
+1. [Install MinIO Server](#1-install-minio-server)
+2. [Use an Existing Key and Certificate with MinIO](#2-use-an-existing-key-and-certificate-with-minio)
+3. [Generate and use Self-signed Keys and Certificates with MinIO](#3-generate-and-use-self-signed-keys-and-certificates-with-minio)
 4. [Install Certificates from Third-party CAs](#install-certificates-from-third-party-cas)
 
 ## 1. Install MinIO Server
@@ -13,7 +13,7 @@ Install MinIO Server using the instructions in the [MinIO Quickstart Guide](http
 
 ## 2. Use an Existing Key and Certificate with MinIO
 
-This section describes how to use a private key and public certificate that have been obtained from a certificate authority (CA). If these files have not been obtained, skip to [3. Generate Self-signed Certificates](#generate-use-self-signed-keys-certificates) or generate them with [Let's Encrypt](https://letsencrypt.org) using these instructions: [Generate Let's Encrypt certificate using Certbot for MinIO](https://docs.min.io/community/minio-object-store/integrations/generate-lets-encrypt-certificate-using-certbot-for-minio.html). For more about TLS and certificates in MinIO, see the [Network Encryption documentation](https://docs.min.io/community/minio-object-store/operations/network-encryption.html).
+This section describes how to use a private key and public certificate that have been obtained from a certificate authority (CA). If these files have not been obtained, skip to [3. Generate Self-signed Certificates](#3-generate-and-use-self-signed-keys-and-certificates-with-minio) or generate them with [Let's Encrypt](https://letsencrypt.org) using these instructions: [Generate Let's Encrypt certificate using Certbot for MinIO](https://docs.min.io/community/minio-object-store/integrations/generate-lets-encrypt-certificate-using-certbot-for-minio.html). For more about TLS and certificates in MinIO, see the [Network Encryption documentation](https://docs.min.io/community/minio-object-store/operations/network-encryption.html).
 
 Copy the existing private key and public certificate to the `certs` directory. The default certs directory is:
 
