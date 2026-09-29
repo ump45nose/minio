@@ -5,7 +5,7 @@ This guide explains how to configure MinIO Server with TLS certificates on Linux
 1. [Install MinIO Server](#1-install-minio-server)
 2. [Use an Existing Key and Certificate with MinIO](#2-use-an-existing-key-and-certificate-with-minio)
 3. [Generate and use Self-signed Keys and Certificates with MinIO](#3-generate-and-use-self-signed-keys-and-certificates-with-minio)
-4. [Install Certificates from Third-party CAs](#install-certificates-from-third-party-cas)
+4. [Install Certificates from Third-party CAs](#4-install-certificates-from-third-party-cas)
 
 ## 1. Install MinIO Server
 
@@ -30,10 +30,10 @@ Copy the existing private key and public certificate to the `certs` directory. T
 
 This section describes how to generate a self-signed certificate using various tools:
 
-* 3.1 [Use certgen to Generate a Certificate](#using-go)
-* 3.2 [Use OpenSSL to Generate a Certificate](#using-open-ssl)
-* 3.3 [Use OpenSSL (with IP address) to Generate a Certificate](#using-open-ssl-with-ip)
-* 3.4 [Use GnuTLS (for Windows) to Generate a Certificate](#using-gnu-tls)
+* 3.1 [Use certgen to Generate a Certificate](#31-use-certgen-to-generate-a-certificate)
+* 3.2 [Use OpenSSL to Generate a Certificate](#32-use-openssl-to-generate-a-certificate)
+* 3.3 [Use OpenSSL (with IP address) to Generate a Certificate](#32-use-openssl-to-generate-a-certificate)
+* 3.4 [Use GnuTLS (for Windows) to Generate a Certificate](#33-use-gnutls-for-windows-to-generate-a-certificate)
 
 **Note:**
 
@@ -61,9 +61,9 @@ A response similar to this one should be displayed:
 
 Use one of the following methods to generate a certificate using `openssl`:
 
-* 3.2.1 [Generate a private key with ECDSA](#generate-private-key-with-ecdsa)
-* 3.2.2 [Generate a private key with RSA](#generate-private-key-with-rsa)
-* 3.2.3 [Generate a self-signed certificate](#generate-a-self-signed-certificate)
+* 3.2.1 [Generate a private key with ECDSA](#321-generate-a-private-key-with-ecdsa)
+* 3.2.2 [Generate a private key with RSA](#322-generate-a-private-key-with-rsa)
+* 3.2.3 [Generate a self-signed certificate](#323-generate-a-self-signed-certificate)
 
 #### 3.2.1 Generate a private key with ECDSA
 
